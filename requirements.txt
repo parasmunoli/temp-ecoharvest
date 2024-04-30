@@ -1,0 +1,5 @@
+flask
+pickle
+json
+scikit-learn
+pandas
