@@ -8,7 +8,7 @@ app = Flask(__name__)
 with open('crop_prediction.pkl', 'rb') as model_file:
     crop_model = pickle.load(model_file)
 
-with open('fertilizer_predicton.pkl', 'rb') as model_file:
+with open('fertilizer_prediction.pkl', 'rb') as model_file:
     fertilizer_model = pickle.load(model_file)
 
 with open('encoded_categories.json', 'r') as f:
