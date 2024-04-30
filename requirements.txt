@@ -3,3 +3,4 @@ pickle
 json
 scikit-learn
 pandas
+gunicorn
