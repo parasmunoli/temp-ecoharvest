@@ -15,7 +15,7 @@ with open('encoded_categories.json', 'r') as f:
     encoded_categories = json.load(f)
 
 @app.route('/fertilizer_predict', methods=['POST'])
-def predict():
+def fertilizer_predict():
     data = request.get_json()
 
     temperature = data['Temperature']
@@ -43,7 +43,7 @@ def predict():
 
 
 @app.route('/crop_predict', methods=['POST'])
-def predict():
+def crop_predict():
     try:
         data = request.json
         N = float(data['N'])
