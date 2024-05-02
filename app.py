@@ -57,7 +57,7 @@ def crop_predict():
         prediction = crop_model.predict([[N, P, K, temperature, humidity, pH, rainfall]])
 
         response = {'prediction': prediction[0]}
-        return jsonify(response), 200
+        return jsonify(response)
 
     except Exception as e:
         error_message = {'error': str(e)}
