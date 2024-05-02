@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 import json
 import pickle
-from flask-cors import CORS
+from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
